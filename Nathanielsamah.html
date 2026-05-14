@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Mr. Nathaniel Samah</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+        .container { max-width: 800px; margin: 0 auto; }
+        
+        header { 
+            display: flex; 
+            flex-direction: row; 
+            align-items: center; 
+            justify-content: space-between; 
+            gap: 2rem; 
+            margin-bottom: 3rem; 
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        .header-text { flex: 1; text-align: left; }
+        header h1 { font-size: 2.4rem; color: var(--text-main); margin-bottom: 0.2rem; }
+        header h2.subtitle { font-size: 1.4rem; color: var(--accent); margin-bottom: 0.6rem; font-weight: 600; }
+        header p { color: var(--text-muted); font-size: 1.05rem; }
+        
+        /* FIXED CSS CLASS NAME MATCHING */
+        .Samah-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent);
+            box-shadow: 0 4px 10px rgba(56, 189, 248, 0.2);
+        }
+
+        .section { margin-bottom: 2.5rem; background: var(--card-bg); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--accent); }
+        .section h2 { font-size: 1.4rem; margin-bottom: 1rem; color: var(--accent); text-transform: uppercase; letter-spacing: 1px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+        .badge { display: inline-block; background: #0284c7; color: white; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.85rem; margin: 0.2rem; }
+        .cert-badge { display: inline-block; background: #475569; color: #38bdf8; padding: 0.3rem 0.7rem; border-radius: 4px; font-size: 0.9rem; margin: 0.3rem; border: 1px solid #38bdf8; font-weight: 500; }
+        .project-card { background: #334155; padding: 1rem; border-radius: 6px; margin-top: 0.5rem; }
+        .project-card h3 { color: #f1f5f9; font-size: 1.1rem; margin-bottom: 0.2rem; }
+        .project-card .timeline { color: var(--accent); font-size: 0.85rem; font-weight: bold; margin-bottom: 0.5rem; }
+        .project-card p { color: var(--text-muted); font-size: 0.95rem; }
+        footer { text-align: center; margin-top: 4rem; color: var(--text-muted); font-size: 0.85rem; border-top: 1px solid var(--card-bg); padding-top: 1.5rem; }
+        
+        @media (max-width: 600px) {
+            header { flex-direction: column-reverse; text-align: center; padding: 1.5rem; }
+            .header-text { text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="header-text">
+            <h1>MR. NATHANIEL SAMAH</h1>
+            <h2 class="subtitle">AI & IoT Systems Engineer</h2>
+            <p>Specializing in Smart Infrastructures, Generative AI Systems & Smart Hardware Integration</p>
+        </div>
+        <img class="Samah-img" src="Samah.jpg" alt="Mr. Nathaniel Samah Profile Photo">
+    </header>
+
+    <div class="section">
+        <h2>About Me</h2>
+        <p>I am an IT professional completing an advanced M.Sc in Information Technology. My core expertise is situated at the intersection of **Artificial Intelligence** and the **Internet of Things (IoT)**. Rather than focusing strictly on code execution, I specialize in the structural engineering of intelligent hardware nodes, resource-constrained network scaling, and deploying Generative AI models to solve real-world problems.</p>
+    </div>
+
+    <div class="section">
+        <h2>Core Skill Stack</h2>
+        <div>
+            <span class="badge" style="background:#0ea5e9;">Artificial Intelligence (AI)</span>
+            <span class="badge" style="background:#0ea5e9;">Internet of Things (IoT)</span>
+            <span class="badge" style="background:#0ea5e9;">Generative AI & LLMs</span>
+            <span class="badge">Embedded System Architecture</span>
+            <span class="badge">Computer Networking Basics</span>
+            <span class="badge">Python (Systems Scripting)</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Academic Research</h2>
+        <div class="project-card">
+            <h3>Research Paper: Power Challenges for IoT in Liberia</h3>
+            <p>An advanced academic paper analyzing the power constraints, physical limitations, and data transmission issues facing intelligent edge-sensor arrays within infrastructure-limited zones. Outlined system architecture solutions for long-term node sustainability.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Education Background</h2>
+        <div class="project-card" style="margin-bottom: 1rem;">
+            <h3>Master of Science in Information Technology (M.Sc IT)</h3>
+            <div class="timeline">Expected Graduation: August 2027</div>
+            <p>Advanced studies with research and design focus on intelligent networks, complex system schemas, and technical problem-solving frameworks.</p>
+        </div>
+        <div class="project-card">
+            <h3>Bachelor of Science in Information Technology (B.Sc IT)</h3>
+            <div class="timeline">Graduated: 2025</div>
+            <p>Completed foundational coursework in hardware interfaces, database systems, foundational electronics, and communication software structures.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Professional Certifications</h2>
+        <div style="margin-top: 0.5rem;">
+            <div class="cert-badge">Generative AI Specialist</div>
+            <div class="cert-badge">AI Systems using Canva</div>
+            <div class="cert-badge">Basic Computer Networks</div>
+            <div class="cert-badge">Digital Marketing Architecture</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Featured Projects & Practicals</h2>
+        <div class="grid">
+            <div class="project-card">
+                <h3>IoT Power Optimization Engine</h3>
+                <p>An architectural simulation system built using Python to calculate, map, and predict operational timelines for multi-node smart environments.</p>
+            </div>
+            <div class="project-card">
+                <h3>44-Day Technical Execution Practical</h3>
+                <p>An intensive hands-on lab pipeline focused on translating hardware-level network inputs into structured software workflows using script automation.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Target Objectives</h2>
+        <p>Actively targeting technical placements for the 2027 METI Japan Internship Program. Seeking roles in Japanese high-tech firms specializing in robotics, smart city layouts, automation systems, or industrial AI design labs.</p>
+    </div>
+
+    <footer>
+        <p>© 2026 Portfolio. Tailored for Japanese Tech Recruitment.</p>
+    </footer>
+</div>
+
+</body>
+</html>
